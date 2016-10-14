@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="a45858000w.magicv3.MainActivity">
+    <item android:title="Reset"
+        android:id="@+id/reset"
+        app:showAsAction="always"
+        android:visible="true"
+        android:enabled="true"
+        android:checkable="false" />
+</menu>

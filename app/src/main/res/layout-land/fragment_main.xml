@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="a45858000w.magicv3.MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+    <!--Jugador 1-->
+    <!--Vida1-->
+
+    <Button
+        android:text="VIDA-"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/btmenosVida1"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintTop_toBottomOf="@+id/btmenosVeneno1" />
+
+    <Button
+        android:text="VIDA+"
+        android:layout_width="wrap_content"
+        android:layout_height="102dp"
+        android:id="@+id/btmasVida1"
+        app:layout_constraintLeft_toLeftOf="@+id/btmasVeneno1"
+        app:layout_constraintRight_toRightOf="@+id/btmasVeneno1"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btmasVeneno1"
+        app:layout_constraintBottom_toTopOf="@+id/btquitarVida1" />
+    <!--Veneno1-->
+
+    <Button
+        android:text="P+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btmasVeneno1"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"/>
+
+    <Button
+        android:text="P-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btmenosVeneno1"
+        android:textSize="14sp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Texto1-->
+    <TextView
+        android:text="20/0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/txtDatos1"
+        app:layout_constraintRight_toLeftOf="@+id/btmenosVeneno1"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/btmasVida1"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toTopOf="@+id/btmenosVeneno1"
+        android:textSize="36sp"
+        android:textColor="@android:color/background_dark"
+        android:textAlignment="center"
+        android:paddingTop="50dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintBottom_toTopOf="@+id/btquitarVida1" />
+
+
+    <!--Jugador 2-->
+    <!--Vida2-->
+    <Button
+        android:text="VIDA-"
+        android:layout_width="wrap_content"
+        android:layout_height="97dp"
+        android:id="@+id/btmenosVida2"
+        app:layout_constraintLeft_toLeftOf="@+id/btmenosVeneno2"
+        app:layout_constraintRight_toRightOf="@+id/btmenosVeneno2"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btquitarVida2"
+        app:layout_constraintBottom_toTopOf="@+id/btmenosVeneno2"
+        android:layout_marginBottom="8dp" />
+    <Button
+        android:text="VIDA+"
+        android:layout_width="wrap_content"
+        android:layout_height="97dp"
+        android:id="@+id/btmasVida2"
+        app:layout_constraintLeft_toLeftOf="@+id/btmasVeneno2"
+        app:layout_constraintRight_toRightOf="@+id/btmasVeneno2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintBottom_toTopOf="@+id/btmasVeneno2"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btquitarVida2"
+        android:layout_marginTop="8dp" />
+    <!--Veneno2-->
+    <Button
+        android:text="p+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btmasVeneno2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <Button
+        android:text="p-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btmenosVeneno2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <!--Texto2-->
+    <TextView
+        android:text="20/0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/txtDatos2"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/btmasVida2"
+        app:layout_constraintBottom_toBottomOf="@+id/btmasVeneno2"
+        android:textSize="36sp"
+        android:textColor="@android:color/background_dark"
+        android:textAlignment="center"
+        android:paddingTop="50dp"
+        app:layout_constraintRight_toLeftOf="@+id/btmenosVida2"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btquitarVida2" />
+
+
+    <!--Quitar Vida-->
+    <Button
+        android:text="Quitar Vida de P1 a P2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/btquitarVida1"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintLeft_toRightOf="@+id/btmasVida1"
+        app:layout_constraintRight_toLeftOf="@+id/btmenosVida1" />
+
+    <Button
+        android:text="Quitar Vida de P2 a P1"
+        android:layout_width="0dp"
+        android:id="@+id/btquitarVida2"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        app:layout_constraintRight_toLeftOf="@+id/btmenosVida2"
+        app:layout_constraintLeft_toLeftOf="@+id/txtDatos2" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="592dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline9"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="133dp"
+        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintGuide_percent="0.5058043" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        app:layout_constraintGuide_begin="206dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="206dp" />
+
+</android.support.constraint.ConstraintLayout>
